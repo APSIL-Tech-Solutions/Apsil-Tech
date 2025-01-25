@@ -1,0 +1,36 @@
+.carousel-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .carousel-slide {
+    position: relative;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: rounded corners for images */
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  
+  /* Style for navigation dots */
+  .slick-dots {
+    bottom: 10px;
+  }
+  
+  .slick-dots li button:before {
+    color: white; /* Color of navigation dots */
+  }
+  
