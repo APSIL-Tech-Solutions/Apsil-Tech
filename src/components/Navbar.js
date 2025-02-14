@@ -38,7 +38,7 @@ function Navbar() {
 
       <nav className="navbar">
         <div className="navbar-container">
-          <a href="#home" className="navbar-logo">
+          <a href="/" className="navbar-logo">
             <img src={logo} alt="Company Logo" className="logo-img" />
           </a>
           <div className="hamburger-menu" onClick={toggleMenu}>
