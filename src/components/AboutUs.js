@@ -1,8 +1,8 @@
 import React from "react";
 import "../styles/AboutUs.css";
-import ceo from "../assets/ceo.jpg";
-import co1 from "../assets/co1.png";
-import co2 from "../assets/co2.jpg";
+// import ceo from "../assets/ceo.jpg";
+// import co1 from "../assets/co1.png";
+// import co2 from "../assets/co2.jpg";
 
 function AboutUs() {
   return (
