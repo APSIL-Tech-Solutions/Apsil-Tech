@@ -1,0 +1,64 @@
+.web-dev-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .web-dev-hero {
+    background: linear-gradient(to right, #4CAF50, #2E8B57);
+    color: white;
+    padding: 50px 20px;
+  }
+  
+  .services-offered {
+    padding: 40px;
+  }
+  
+  .service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .service-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tech-stack {
+    padding: 40px;
+    background: #f1f1f1;
+  }
+  
+  .tech-list span {
+    display: inline-block;
+    background: #2E8B57;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  
+  .cta {
+    padding: 40px;
+    background: #4CAF50;
+    color: white;
+  }
+  
+  .cta-button {
+    background: white;
+    color: #4CAF50;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .cta-button:hover {
+    background: #2E8B57;
+    color: white;
+  }
+  

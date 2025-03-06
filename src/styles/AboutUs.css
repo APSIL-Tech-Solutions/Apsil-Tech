@@ -1,124 +1,130 @@
 /* General Styles */
 .about-us {
-    font-family: Arial, sans-serif;
-    margin: 0 auto;
-    padding: 30px;
-    max-width: 1200px;
-  }
-  
-  .about-header {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .about-header h1 {
-    font-size: 36px;
-    color: #333;
-  }
-  
-  .about-header p {
-    font-size: 18px;
-    color: #777;
-  }
-  
-  /* Section Styles */
-  .section-title {
-    margin-bottom: 15px;
-  }
-  
-  h2 {
-    font-size: 28px;
-    color: #333;
-    border-bottom: 3px solid #04AA6D;
-    padding-bottom: 5px;
-  }
-  
-  .about-introduction,
-  .about-mission,
-  .about-team,
-  .about-contact {
-    margin-bottom: 40px;
-  }
-  
-  .about-introduction p,
-  .about-mission p,
-  .about-contact p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #555;
-  }
-  
-  /* Team Section */
-  .team-members {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-  .team-member {
-    text-align: center;
-    margin: 20px;
-  }
-  
-  .team-member img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 15px;
-  }
-  
-  .team-member h3 {
-    font-size: 20px;
-    color: #333;
-  }
-  
-  .team-member p {
-    font-size: 16px;
-    color: #777;
-  }
-  
-  /* Contact Section */
-  /* .about-contact .contact-link {
-    display: inline-block;
-    font-size: 18px;
-    color: #04AA6D;
-    text-decoration: none;
-    border: 2px solid #04AA6D;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-top: 20px;
-    align-items: center;
-   
-  }
-  
-  .about-contact .contact-link:hover {
-    background-color: #04AA6D;
-    color: white;
-  }
-   */
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  padding: 50px;
+  max-width: 1100px;
+  margin: auto;
+  background: linear-gradient(to right, #ffffff, #f8f9fa);
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
 
-   /* Contact Section */
+/* Header */
+.about-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-header h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #04AA6D;
+}
+
+.about-header p {
+  font-size: 18px;
+  color: #666;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Section Styles */
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #04AA6D;
+  border-bottom: 3px solid #04AA6D;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.about-introduction, .about-mission, .about-team, .about-contact {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-introduction p, .about-mission p, .about-contact p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #444;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Team Section */
+.team-members {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.team-member {
+  text-align: center;
+  margin: 20px;
+}
+
+.team-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.team-card img {
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 4px solid #04AA6D;
+}
+
+.team-card h3 {
+  font-size: 20px;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.team-card p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Contact Section */
 .about-contact {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 30px;
+  border-radius: 10px;
+  background: #04AA6D;
+  color: white;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .about-contact .contact-link {
   display: inline-block;
   font-size: 18px;
-  color: #04AA6D;
+  color: #fff;
   text-decoration: none;
-  border: 2px solid #04AA6D;
+  border: 2px solid white;
   padding: 10px 20px;
   border-radius: 5px;
-  margin-top: 20px;
+  margin-top: 15px;
+  transition: all 0.3s ease;
 }
 
 .about-contact .contact-link:hover {
-  background-color: #04AA6D;
-  color: white;
+  background-color: white;
+  color: #04AA6D;
 }

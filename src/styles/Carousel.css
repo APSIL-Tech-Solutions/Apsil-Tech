@@ -1,36 +1,35 @@
-.carousel-container {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
+.hero-img {
+  height: 80vh; /* Full-screen height */
+  object-fit: cover; /* Ensure image fills the container */
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.1); /* Semi-transparent black */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.hero-text {
+  font-size: 1.2rem;
+  color: #f8f9fa;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
   }
-  
-  .carousel-slide {
-    position: relative;
+
+  .hero-text {
+    font-size: 1rem;
   }
-  
-  .carousel-slide img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px; /* Optional: rounded corners for images */
+
+  .hero-img {
+    height: 60vh; /* Reduce height on smaller screens */
   }
-  
-  .carousel-caption {
-    position: absolute;
-    bottom: 10px;
-    left: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-    font-size: 18px;
-    border-radius: 5px;
-  }
-  
-  /* Style for navigation dots */
-  .slick-dots {
-    bottom: 10px;
-  }
-  
-  .slick-dots li button:before {
-    color: white; /* Color of navigation dots */
-  }
-  
+}

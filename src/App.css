@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+.feature-card {
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for transform and background color */
+}
+
+.feature-card:hover {
+  transform: scale(1.05); /* Slightly increase the card size on hover */
+  background-color: #f8f9fa; /* Change background color on hover */
+}

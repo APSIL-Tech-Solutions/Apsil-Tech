@@ -1,108 +1,129 @@
 /* Contact Page Styles */
 .contact-page {
-    padding: 60px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-  }
-  
-  .contact-header h1 {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .contact-header p {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 40px;
-  }
-  
-  .contact-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .contact-form {
-    width: 100%;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .form-group label {
-    display: block;
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 8px;
-  }
-  
-  .form-group input,
-  .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  .form-group textarea {
-    height: 100px;
-    resize: none;
-  }
-  
-  .contact-button {
-    display: inline-block;
-    background-color: #04AA6D;
-    color: white;
-    font-size: 18px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .contact-button:hover {
-    background-color: #028a50;
-  }
-  
-  .contact-info {
-    margin-top: 40px;
-    text-align: center;
-    font-size: 16px;
-  }
-  
-  .contact-info h3 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .contact-info p {
-    margin-bottom: 10px;
-    color: #555;
-  }
-  
-  .contact-info a {
-    color: #04AA6D;
-    text-decoration: none;
-  }
-  
-  .contact-info a:hover {
-    text-decoration: underline;
-  }
-  
-  .success-message {
-    margin-top: 20px;
-    color: #28a745;
-    font-size: 16px;
-  }
-  
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-header h1 {
+  font-size: 40px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.contact-header p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  width: 100%;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.contact-form:hover {
+  transform: scale(1.02);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #04AA6D;
+  outline: none;
+  box-shadow: 0 0 8px rgba(4, 170, 109, 0.5);
+}
+
+.form-group textarea {
+  height: 120px;
+  resize: none;
+}
+
+.contact-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #04AA6D, #028a50);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-button:hover {
+  background: linear-gradient(135deg, #028a50, #04AA6D);
+  transform: scale(1.05);
+}
+
+.contact-info {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.contact-info h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.contact-info a {
+  color: #04AA6D;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+  color: #028a50;
+}
+
+.success-message {
+  margin-top: 20px;
+  color: #28a745;
+  font-size: 18px;
+  font-weight: 600;
+}

@@ -20,26 +20,25 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Replace the placeholders with your actual EmailJS service details
     emailjs
       .send(
-        'service_1f543r7', // Replace with your Service ID
-        'template_kn99xgl', // Replace with your Template ID
+        'service_1f543r7',
+        'template_kn99xgl',
         {
           name: formData.name,
           email: formData.email,
           phone: formData.phone,
           message: formData.message,
         },
-        'mz4KZNqeu9YRU8n0P' // Replace with your Public Key
+        'mz4KZNqeu9YRU8n0P'
       )
       .then(
         () => {
-          setResponseMessage('Your message has been sent successfully!');
-          setFormData({ name: '', email: '', phone: '', message: '' }); // Reset form
+          setResponseMessage('✅ Your message has been sent successfully!');
+          setFormData({ name: '', email: '', phone: '', message: '' });
         },
         (error) => {
-          setResponseMessage('Error sending the message. Please try again.');
+          setResponseMessage('❌ Error sending the message. Please try again.');
           console.error('EmailJS Error:', error);
         }
       );
@@ -48,8 +47,8 @@ function Contact() {
   return (
     <div className="contact-page">
       <div className="contact-header">
-        <h1>Contact Us</h1>
-        <p>We would love to hear from you. Please fill out the form below!</p>
+        <h1>📩 Get in Touch</h1>
+        <p>We’d love to hear from you! Fill out the form below to connect with us.</p>
       </div>
 
       <div className="contact-container">
@@ -60,7 +59,7 @@ function Contact() {
               type="text"
               name="name"
               id="name"
-              placeholder="Your Name"
+              placeholder="John Doe"
               value={formData.name}
               onChange={handleChange}
               required
@@ -73,7 +72,7 @@ function Contact() {
               type="email"
               name="email"
               id="email"
-              placeholder="Your Email"
+              placeholder="you@example.com"
               value={formData.email}
               onChange={handleChange}
               required
@@ -86,7 +85,7 @@ function Contact() {
               type="tel"
               name="phone"
               id="phone"
-              placeholder="Your Phone Number"
+              placeholder="+91 9876543210"
               value={formData.phone}
               onChange={handleChange}
               required
@@ -98,22 +97,22 @@ function Contact() {
             <textarea
               name="message"
               id="message"
-              placeholder="Your Message"
+              placeholder="Write your message here..."
               value={formData.message}
               onChange={handleChange}
               required
             />
           </div>
 
-          <button type="submit" className="contact-button">Submit</button>
+          <button type="submit" className="contact-button">🚀 Send Message</button>
         </form>
 
         {responseMessage && <p className="success-message">{responseMessage}</p>}
       </div>
 
       <div className="contact-info">
-        <h3>Contact Information</h3>
-        <p>If you have any questions, feel free to reach out to us via email or phone.</p>
+        <h3>📞 Contact Information</h3>
+        <p>Feel free to reach out via email or phone.</p>
         <p>Email: <a href="mailto:apsiltechsolutions@gmail.com">apsiltechsolutions@gmail.com</a></p>
         <p>Phone: <a href="tel:+91-9391446913">+91 9391446913</a></p>
       </div>

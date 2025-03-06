@@ -1,22 +1,25 @@
 import React from 'react';
-import AboutUs from './AboutUs';
 import CustomCarousel from './Carousel';
 import Services from './Services';
 import Portfolio from './Portfolio';
-// import Testimonials from './Testimonials';
-import Contact from './Contact';
-import FinalYearProjects from './FinalYearProjects';
+import Hero1 from "./Hero1";
+import FeaturesSection from "./FeaturesSection";
+import Hero3 from "./Hero3";
+import Hero4 from "./Hero4";
 
 const Home = () => {
   return (
     <div className="home-container">
-      <CustomCarousel/>
-      <AboutUs/>
-      <Services/>
-      <Portfolio/>
-      <FinalYearProjects/>
-      {/* <Testimonials/> */}
-      <Contact/>
+      {/* Ensure all components exist and are correctly imported */}
+      <CustomCarousel />
+      <Hero1 />
+      <FeaturesSection />
+      <Hero3 />
+      <Services />
+      <Portfolio />
+      {/* <AboutUs /> */}
+      <Hero4 />
+      {/* <Contact /> */}
     </div>
   );
 };
